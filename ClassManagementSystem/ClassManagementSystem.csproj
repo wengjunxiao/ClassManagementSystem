@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{97A468E4-85DA-401D-A11C-9D10011F1C61}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClassManagementSystem</RootNamespace>
+    <AssemblyName>ClassManagementSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="IrisSkin2">
+      <HintPath>..\..\IrisSkin2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserUC\ClassActivityManage\ClassActivityUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUC\ClassActivityManage\ClassActivityUC.Designer.cs">
+      <DependentUpon>ClassActivityUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserUC\ClassFeeManage\ClassFee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUC\ClassFeeManage\ClassFee.Designer.cs">
+      <DependentUpon>ClassFee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserUC\ClassFileManage\ClassFileUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUC\ClassFileManage\ClassFileUC.Designer.cs">
+      <DependentUpon>ClassFileUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserUC\ClassPlanManage\ClassPlanUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUC\ClassPlanManage\ClassPlanUC.Designer.cs">
+      <DependentUpon>ClassPlanUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserUC\ClassPositionManage\ClassPositionUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUC\ClassPositionManage\ClassPositionUC.Designer.cs">
+      <DependentUpon>ClassPositionUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBModel\DBConnection.cs" />
+    <Compile Include="DBModel\DeleteCommand.cs" />
+    <Compile Include="DBModel\InsertCommand.cs" />
+    <Compile Include="DBModel\SelectCommand.cs" />
+    <Compile Include="DBModel\UpdateCommand.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MainUC.Designer.cs">
+      <DependentUpon>MainUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserUC\RewardPenaltyManage\PenaltyUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUC\RewardPenaltyManage\PenaltyUC.Designer.cs">
+      <DependentUpon>PenaltyUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserUC\RewardPenaltyManage\RewardUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUC\RewardPenaltyManage\RewardUC.Designer.cs">
+      <DependentUpon>RewardUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserUC\StudAtdInfoManage\StudAtdInfoUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUC\StudAtdInfoManage\StudAtdInfoUC.Designer.cs">
+      <DependentUpon>StudAtdInfoUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserUC\StudentInfoManage\ModifySInfoUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUC\StudentInfoManage\ModifySInfoUC.Designer.cs">
+      <DependentUpon>ModifySInfoUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserUC\StudentInfoManage\SearchSInfoUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUC\StudentInfoManage\SearchSInfoUC.Designer.cs">
+      <DependentUpon>SearchSInfoUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserUC\StudentInfoManage\InsertSInfoUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUC\StudentInfoManage\InsertSInfoUC.Designer.cs">
+      <DependentUpon>InsertSInfoUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserUC\StuOverallEvaManage\StuOverallEva.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUC\StuOverallEvaManage\StuOverallEva.Designer.cs">
+      <DependentUpon>StuOverallEva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Temp.cs" />
+    <Compile Include="UserInfo\User.cs" />
+    <Compile Include="UserUC\UserManage\AddUserUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUC\UserManage\AddUserUC.Designer.cs">
+      <DependentUpon>AddUserUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserUC\UserManage\DelUserUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUC\UserManage\DelUserUC.Designer.cs">
+      <DependentUpon>DelUserUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserUC\UserManage\ModifyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserUC\UserManage\ModifyForm.Designer.cs">
+      <DependentUpon>ModifyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserUC\UserManage\PersonInfoUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserUC\UserManage\PersonInfoUC.Designer.cs">
+      <DependentUpon>PersonInfoUC.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUC\ClassActivityManage\ClassActivityUC.resx">
+      <DependentUpon>ClassActivityUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUC\ClassFeeManage\ClassFee.resx">
+      <DependentUpon>ClassFee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUC\ClassFileManage\ClassFileUC.resx">
+      <DependentUpon>ClassFileUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUC\ClassPlanManage\ClassPlanUC.resx">
+      <DependentUpon>ClassPlanUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUC\ClassPositionManage\ClassPositionUC.resx">
+      <DependentUpon>ClassPositionUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUC.resx">
+      <DependentUpon>MainUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UserUC\RewardPenaltyManage\PenaltyUC.resx">
+      <DependentUpon>PenaltyUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUC\RewardPenaltyManage\RewardUC.resx">
+      <DependentUpon>RewardUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUC\StudAtdInfoManage\StudAtdInfoUC.resx">
+      <DependentUpon>StudAtdInfoUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUC\StudentInfoManage\InsertSInfoUC.resx">
+      <DependentUpon>InsertSInfoUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUC\StudentInfoManage\ModifySInfoUC.resx">
+      <DependentUpon>ModifySInfoUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUC\StudentInfoManage\SearchSInfoUC.resx">
+      <DependentUpon>SearchSInfoUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUC\StuOverallEvaManage\StuOverallEva.resx">
+      <DependentUpon>StuOverallEva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUC\UserManage\AddUserUC.resx">
+      <DependentUpon>AddUserUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUC\UserManage\DelUserUC.resx">
+      <DependentUpon>DelUserUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUC\UserManage\ModifyForm.resx">
+      <DependentUpon>ModifyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserUC\UserManage\PersonInfoUC.resx">
+      <DependentUpon>PersonInfoUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\2337CE614DBD6B4CAEF850A5CF8493C7.jpg" />
+    <Content Include="Resources\Comic Icons 3 back.png" />
+    <Content Include="Resources\Comic Icons 3 back1.png" />
+    <None Include="Resources\png-05501.png" />
+    <None Include="Resources\png-070111.png" />
+    <None Include="Resources\png-084011.png" />
+    <None Include="Resources\png-050611.png" />
+    <None Include="Resources\Comic Icons 3 back2.png" />
+    <Content Include="Resources\Comic Icons 3 button_cancel.png" />
+    <Content Include="Resources\Comic Icons 3 button_cancel1.png" />
+    <None Include="Resources\Comic Icons 3 button_cancel11.png" />
+    <Content Include="Resources\png-0506.png" />
+    <Content Include="Resources\png-05061.png" />
+    <Content Include="Resources\png-0520.png" />
+    <None Include="Resources\PNG-094711.png" />
+    <None Include="Resources\PNG-088611.png" />
+    <None Include="Resources\png-05202.png" />
+    <None Include="Resources\png-05201.png" />
+    <Content Include="Resources\png-0550.png" />
+    <Content Include="Resources\png-0570.png" />
+    <Content Include="Resources\png-05701.png" />
+    <Content Include="Resources\png-05702.png" />
+    <Content Include="Resources\png-0585.png" />
+    <Content Include="Resources\png-05851.png" />
+    <Content Include="Resources\png-05852.png" />
+    <Content Include="Resources\png-0656.png" />
+    <None Include="Resources\png-06561.png" />
+    <Content Include="Resources\png-0668.png" />
+    <Content Include="Resources\png-06681.png" />
+    <Content Include="Resources\png-0701.png" />
+    <Content Include="Resources\png-07011.png" />
+    <Content Include="Resources\png-07012.png" />
+    <Content Include="Resources\png-0758.png" />
+    <Content Include="Resources\png-07581.png" />
+    <Content Include="Resources\png-0840.png" />
+    <Content Include="Resources\png-08401.png" />
+    <Content Include="Resources\png-08402.png" />
+    <Content Include="Resources\PNG-0886.png" />
+    <Content Include="Resources\PNG-08861.png" />
+    <Content Include="Resources\PNG-0947.png" />
+    <Content Include="Resources\PNG-09471.png" />
+    <Content Include="Resources\PNG-0986.png" />
+    <Content Include="Resources\PNG-09861.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
